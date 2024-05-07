@@ -3,7 +3,7 @@ package exemplos;
 public class Conta {
     int numero;
     String nomeTitular;
-    double saldo;
+   private double saldo;
     
     void depositar(double valor) {
         // this.saldo += valor;
@@ -16,5 +16,20 @@ public class Conta {
             return true;
         } else
             return false;        
+    }
+    public double getsaldo(){
+        return this.saldo;
+    }
+    public int getnumero(){
+        return this.numero;
+    }
+    public String getnomeTitular(){
+        return this.nomeTitular;
+    }
+    public void setNumero (int numero){
+        this.numero = numero;
+    }
+    public void setnomeTitular (String nomeTitular){
+        this.nomeTitular = nomeTitular;
     }
 }
